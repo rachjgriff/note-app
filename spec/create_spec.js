@@ -9,13 +9,25 @@
 //Potentially id created at later point
 
 (function(exports){
+
   function testNoteHasContent() {
     var note = new Note();
 
-    if (note.content !== "Hello world!") {
+    if (note.content !== "Lorem ipsum dolor sit amet.") {
       throw new Error("Note is not Hello world!");
     };
   };
 
   testNoteHasContent();
+
+  function testNoteHasTitle() {
+    var note = new Note();
+
+    if(note.title !== "Lorem ipsum dolor si") {
+      throw new Error("Note Title does not match Note Content");
+    };
+  };
+
+  testNoteHasTitle();
+  
 })(this);
