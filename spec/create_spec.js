@@ -14,6 +14,13 @@
 
   testNoteHasTitle();
 
+  function testNoteHasId() {
+    var note = new Note();
+    assert.isTrue(note.id === 0)
+  };
+
+  testNoteHasId();
+  
   function testNoteCreation() {
     var note = new Note();
     note.create("Lorem ipsum dolor sit amet.")
@@ -22,5 +29,9 @@
   };
 
   testNoteCreation();
+
+
+
+
 
 })(this);

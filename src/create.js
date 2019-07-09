@@ -2,6 +2,7 @@
   function Note() {
     this.content = null;
     this.title = null;
+    this.id = 0;
   };
 
   Note.prototype.create = function(content) {
