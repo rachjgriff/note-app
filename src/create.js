@@ -1,7 +1,12 @@
 (function(exports) {
   function Note() {
-    this.content = "Lorem ipsum dolor sit amet."
-    this.title = "Lorem ipsum dolor si"
+    this.content = null;
+    this.title = null;
+  };
+
+  Note.prototype.create = function(content) {
+    this.content = content
+    this.title = content.substring(0, 20)
   };
 
   exports.Note = Note;
