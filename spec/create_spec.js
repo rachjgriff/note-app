@@ -8,7 +8,7 @@
 //and content
 //Potentially id created at later point
 
-(function(exports){
+(function(exports) {
 
   function testNoteHasContent() {
     var note = new Note();
@@ -29,5 +29,5 @@
   };
 
   testNoteHasTitle();
-  
+
 })(this);
