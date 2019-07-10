@@ -23,6 +23,12 @@
 
   testNoteCreation();
 
+  function testNoteContentReturned() {
+    var note = new Note();
+    note.create("Lorem ipsum dolor sit amet.");
+    assert.isTrue(note.returnNoteContent() === "Lorem ipsum dolor sit amet.");
+  };
 
+  testNoteContentReturned();
 
 })(this);

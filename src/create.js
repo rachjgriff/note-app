@@ -9,5 +9,12 @@
     this.title = content.substring(0, 20);
   };
 
+  Note.prototype.returnNoteContent = function() {
+    return this.content
+  };
+
   exports.Note = Note;
 })(this);
+
+
+/// Remove create function - all in the constructor - enter note as argument
