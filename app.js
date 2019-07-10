@@ -8,8 +8,8 @@ window.addEventListener('load', function() {
   var noteModel = NoteModel
 
   // this is where we listens to submit, creates note, adds note to list, updates DOM
-  var controller = new NotesController(noteView, noteModel);
-  
+  var controller = new Controller(noteView, noteModel);
+
   // creates the app - updates DOM
   controller.updateDOM();
 })
