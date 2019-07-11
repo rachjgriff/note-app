@@ -17,7 +17,7 @@
           "<input type='submit'></input>",
         "</form>",
         this.notes.map(function(note) {
-          return "<p>" + note + "</p>"
+          return "<p>" + note.text + "</p>"
         }).join('')
       ].join('')
     },
