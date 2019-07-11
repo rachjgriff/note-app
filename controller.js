@@ -19,7 +19,7 @@ Controller.prototype = {
       form
       updateDOM()
     });
-  };
+  },
 
   updateDOM: function() {
     document.getElementById('app').innerHTML.render()
