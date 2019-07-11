@@ -15,7 +15,7 @@
         event.preventDefault()
         console.log(event)
         // create note
-        var note = new self.noteModel()
+        var note = new self.noteModel(event.target[0].value)
         // add note into list
         self.noteView.add(note)
         // update DOM with the view
