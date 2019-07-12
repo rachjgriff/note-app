@@ -17,11 +17,11 @@
     var notes = [];
     var noteView = new NoteView(notes);
 
-    var note = new NoteModel("Hello World")
+    var note = new NoteModel("Hello World How Are you")
     noteView.add(note);
 
     assert.isTrue(noteView.render() ===
-      "<form><input type='text'></input><input type='submit'></input></form><p>Hello World</p>")
+      "<form><input type='text'></input><input type='submit'></input></form><p>Hello World How Are </p>")
   };
 
   testRenderNotes();
