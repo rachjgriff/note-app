@@ -12,5 +12,6 @@ window.addEventListener('load', function() {
   var controller = new Controller(noteView, noteModel);
 
   // creates the app - updates DOM
-  controller.updateDOM();
+  var element = document.getElementById("app");
+  controller.updateDOM(element);
 })

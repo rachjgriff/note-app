@@ -17,14 +17,16 @@
         var note = new self.noteModel(event.target[0].value)
         // add note into list
         self.noteView.add(note)
+        // extracts the dependany on the 'app' id in index.html
+        var appIdElement = document.getElementById("app");
         // update DOM with the view
-        self.updateDOM()
+        self.updateDOM(appIdElement)
       });
     },
 
-    updateDOM: function() {
+    updateDOM: function(element) {
       var self = this
-      document.getElementById("app").innerHTML = self.noteView.render()
+      element.innerHTML = self.noteView.render()
     }
   }
 
