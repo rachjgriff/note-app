@@ -1,6 +1,6 @@
 // on load, create the app
 window.addEventListener('load', function() {
-  console.log("hello")
+  console.log("Notes App Loaded")
 
   // this is where we store our list of note - return html string
   var noteView = new NoteView([])

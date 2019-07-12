@@ -13,7 +13,6 @@
       window.addEventListener("submit", function(event) {
         // stop the submission
         event.preventDefault()
-        console.log(event)
         // create note
         var note = new self.noteModel(event.target[0].value)
         // add note into list
