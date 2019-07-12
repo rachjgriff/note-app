@@ -5,7 +5,7 @@
     this.noteModel = noteModel;
 
     this._setup();
-  }
+  };
 
   Controller.prototype = {
     _setup: function() {
