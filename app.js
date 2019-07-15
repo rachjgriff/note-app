@@ -7,12 +7,11 @@ window.addEventListener('load', function() {
 
   // this is where we create our new notes
   var noteModel = NoteModel
-
+  var singleNote = SingleNote
   // this is where we listens to submit, creates note, adds note to list, updates DOM
-  var controller = new Controller(noteView, noteModel);
-
+  var controller = new Controller(noteView, noteModel, singleNote);
   // extracts the dependany on the 'app' id in index.html
-  var appIdElement = document.getElementById("app");
+  var appIdElement = document.getElementById("listOfNotes");
 
   // creates the app - updates DOM
   controller.updateDOM(appIdElement);

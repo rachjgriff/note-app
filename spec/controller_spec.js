@@ -29,3 +29,18 @@
 
   testUpdateDOM();
 })(this);
+
+
+// function testUpdateDOM() {
+//   var noteView = [];
+//   var noteModel = "Hello World!";
+//   var controller = new Controller(noteView, noteModel);
+//
+//   var element = {};
+//   controller.updateDOM(element)
+//
+//   assert.isTrue(element.innerHTML ===
+//     "<form><input type='text'></input><input type='submit'></input></form><p>Hello World</p>")
+// };
+//
+// testUpdateDOM();
